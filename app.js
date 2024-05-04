@@ -33,20 +33,20 @@ app.use(
 app.use(cors());
 // app.use("/users", studentRoute);
 
-// app.get("/", async (req, res, next) => {
-//   try {
-//     const students = await newsAdmin.find(); // Retrieve all documents from the Student collection
-//     console.log("hello");
-//     console.log(students)
-//     res.json(students); // Send the retrieved data as JSON response
-//   } catch (error) {
-// res.send(error)
+app.get("/", async (req, res, next) => {
+  try {
+    const students = await newsAdmin.find(); // Retrieve all documents from the Student collection
+    console.log("hello");
+    console.log(students)
+    res.json(students); // Send the retrieved data as JSON response
+  } catch (error) {
+res.send(error)
    
-//   }
-// });
-app.get('/',(req,res)=>{
-  res.send("succesfully created")
-})
+  }
+});
+// app.get('/',(req,res)=>{
+//   res.send("succesfully created")
+// })
 
 // PORT
 const port = process.env.PORT || 4000;
