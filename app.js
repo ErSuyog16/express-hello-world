@@ -31,7 +31,7 @@ app.use(
   })
 );
 app.use(cors());
-app.use("/users", studentRoute);
+// app.use("/users", studentRoute);
 
 // app.get("/", async (req, res, next) => {
 //   try {
@@ -45,7 +45,7 @@ app.use("/users", studentRoute);
 //   }
 // });
 app.get('/',(req,res)=>{
-  res.send(""succesfully created")
+  res.send("succesfully created")
 })
 
 // PORT
