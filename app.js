@@ -1,5 +1,5 @@
 let express = require("express");
-// let mongoose = require("mongoose");
+let mongoose = require("mongoose");
 let cors = require("cors");
 let bodyParser = require("body-parser");
 let dbConfig = require("./database/db");
@@ -44,9 +44,9 @@ res.send(error)
    
   }
 });
-// app.get('/',(req,res)=>{
-//   res.send("succesfully created")
-// })
+app.get('/hii',(req,res)=>{
+  res.send("succesfully created")
+})
 
 // PORT
 const port = process.env.PORT || 4000;
