@@ -15,10 +15,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-errors": "^2.0.0",
-    "mongoose": "^5.9.7",
-    "netlify-cli":"^12.7.2",
-    "netlify-lambda":"^2.0.15",
-    "serverless-http":"^2.7.0"
+    "mongoose": "^5.9.7"
+  
     
   },
   "devDependencies": {
