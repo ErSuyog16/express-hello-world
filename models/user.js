@@ -27,7 +27,7 @@ let newsAdmin = new Schema(
     }
   },
   {
-    collection: "Newsintern",
+    collection: "NewsIntern",
   }
 );
 
